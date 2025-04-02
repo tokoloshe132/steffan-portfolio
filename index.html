@@ -49,10 +49,78 @@
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
+                <p>I am an ambitious and motivated individual with a strong interest in digital marketing, creativity, and entrepreneurship.
+                    I love learning new skills, embracing challanges and seeking opportunities for personal and professional growth.
+<br>
+<br>
+                    Curruntly I'm trying to sharpen my skills in paid media advertising, like Google Ads, learning social media strategies, 
+                    and creating engaing content. I also enjoy working with people, coming up with creative ideas and turning them into a reality.
+                    From designing to problem-solving to marketing a brand, I always enjoy pushing myself and expanding my skill set.
+<br>
+<br>
+                    Beyond work, I try to do as much as possible and discover new hobbies and interests along the way.
+                    I'm a strong believer in continuous growth, adaptability, and making the most of every chance life throws my way.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Social Media Management</span><br>Experienced in growing and managing social media pages.</li>
+                        <li><span>Content Creation</span><br>Photo & Video editing with Canva and Capcut, designing high-quility and eye-catching content with ease.</li>
+                        <li><span>Analytics & Insights</span><br>Familiar with tracking performance using both Google & social media analytics.</li>
+
+                        <li><span>SEO</span><br>keyword research, on-page optimization, and content strategy.</li>
+
+                        <li><span>PPC Advertising</span><br>Understanding of basic paid advertising on platforms like Google Ads.</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Social Media Page /ZaFit</span><br>Fitness-focused Page, where I manage Social Media, create marketing strategies and created engaging content
+                            on Instagram, Facebook and TikTok.
+                            <br>Gaining hand-on experience in digital marketing, content creation and audience growth.
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Fundamentals of Digital Marketing /Google Skillshop</span><br>Completed a 40-hour Google course on the fundamentals of digital marketing,
+                             earning a certificate on February 19, 2025.</li>
+                        <li><span>Diploma in Social Media Strategy /Alison </span><br>Completed a 15-hour course on Social Media Strategy, earning a diploma on March 3, 2025.</li>
+                        <li><span>Highschool Diploma (NSC)</span><br>Completed Highschool on Jan 2024</li>
+
+
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
    </div>
-    
+   <!--------------------PROJECTS------------------------> 
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
 </body>  
 </html>
