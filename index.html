@@ -1,126 +1,216 @@
 <!DOCTYPE html>
 <html>
- <head>
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio Website - Steffan Smuts</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-</head>
-<body>
-   <div id="header">    
-    <div class="container">   
-      <nav> 
-        <img src="Images/logo.png" class="logo">
-        <ul>   
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="Images/logo.png" class="logo" />
+          <ul>
             <li><a href="#">About</a></li>
             <li><a href="#">Skills</a></li>
             <li><a href="#">Experience</a></li>
             <li><a href="#">Education</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
 
-        </ul>
-      </nav> 
-      
-      <div class="header-text"> 
-        <h1>Hi, I'm an aspiring <span>Digital Marketer</span></h1>
-        <p>~ Steffan Smuts</p>
-
-      </div>
-
-    </div>
-
-   </div>
-<!-------------------ABOUT----------------------------->
-   <div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="Images/Profile.png">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>I am an ambitious and motivated individual with a strong interest in digital marketing, creativity, and entrepreneurship.
-                    I love learning new skills, embracing challanges and seeking opportunities for personal and professional growth.
-<br>
-<br>
-                    Curruntly I'm trying to sharpen my skills in paid media advertising, like Google Ads, learning social media strategies, 
-                    and creating engaing content. I also enjoy working with people, coming up with creative ideas and turning them into a reality.
-                    From designing to problem-solving to marketing a brand, I always enjoy pushing myself and expanding my skill set.
-<br>
-<br>
-                    Beyond work, I try to do as much as possible and discover new hobbies and interests along the way.
-                    I'm a strong believer in continuous growth, adaptability, and making the most of every chance life throws my way.
-                </p>
-
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Social Media Management</span><br>Experienced in growing and managing social media pages.</li>
-                        <li><span>Content Creation</span><br>Photo & Video editing with Canva and Capcut, designing high-quility and eye-catching content with ease.</li>
-                        <li><span>Analytics & Insights</span><br>Familiar with tracking performance using both Google & social media analytics.</li>
-
-                        <li><span>SEO</span><br>keyword research, on-page optimization, and content strategy.</li>
-
-                        <li><span>PPC Advertising</span><br>Understanding of basic paid advertising on platforms like Google Ads.</li>
-
-                    </ul>
-                </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>Social Media Page /ZaFit</span><br>Fitness-focused Page, where I manage Social Media, create marketing strategies and created engaging content
-                            on Instagram, Facebook and TikTok.
-                            <br>Gaining hand-on experience in digital marketing, content creation and audience growth.
-                        </li>
-                        
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>Fundamentals of Digital Marketing /Google Skillshop</span><br>Completed a 40-hour Google course on the fundamentals of digital marketing,
-                             earning a certificate on February 19, 2025.</li>
-                        <li><span>Diploma in Social Media Strategy /Alison </span><br>Completed a 15-hour course on Social Media Strategy, earning a diploma on March 3, 2025.</li>
-                        <li><span>Highschool Diploma (NSC)</span><br>Completed Highschool on Jan 2024</li>
-
-
-                    </ul>
-                </div>
-            </div>
+        <div class="header-text">
+          <h1>Hi, I'm an aspiring <span>Digital Marketer</span></h1>
+          <p>~ Steffan Smuts</p>
         </div>
+      </div>
     </div>
-   </div>
-   <!--------------------PROJECTS------------------------> 
+    <!-------------------ABOUT----------------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Images/Profile.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am an ambitious and motivated individual with a strong interest
+              in digital marketing, creativity, and entrepreneurship. I love
+              learning new skills, embracing challanges and seeking
+              opportunities for personal and professional growth.
+              <br />
+              <br />
+              Curruntly I'm trying to sharpen my skills in paid media
+              advertising, like Google Ads, learning social media strategies,
+              and creating engaing content. I also enjoy working with people,
+              coming up with creative ideas and turning them into a reality.
+              From designing to problem-solving to marketing a brand, I always
+              enjoy pushing myself and expanding my skill set.
+              <br />
+              <br />
+              Beyond work, I try to do as much as possible and discover new
+              hobbies and interests along the way. I'm a strong believer in
+              continuous growth, adaptability, and making the most of every
+              chance life throws my way.
+            </p>
 
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Social Media Management</span><br />Experienced in
+                  growing and managing social media pages.
+                </li>
+                <li>
+                  <span>Content Creation</span><br />Photo & Video editing with
+                  Canva and Capcut, designing high-quility and eye-catching
+                  content with ease.
+                </li>
+                <li>
+                  <span>Analytics & Insights</span><br />Familiar with tracking
+                  performance using both Google & social media analytics.
+                </li>
 
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+                <li>
+                  <span>SEO</span><br />keyword research, on-page optimization,
+                  and content strategy.
+                </li>
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
+                <li>
+                  <span>PPC Advertising</span><br />Understanding of basic paid
+                  advertising on platforms like Google Ads.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Social Media Page /ZaFit</span><br />Fitness-focused
+                  Page, where I manage Social Media, create marketing strategies
+                  and created engaging content on Instagram, Facebook and
+                  TikTok. <br />Gaining hand-on experience in digital marketing,
+                  content creation and audience growth.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span
+                    >Fundamentals of Digital Marketing /Google Skillshop</span
+                  ><br />Completed a 40-hour Google course on the fundamentals
+                  of digital marketing, earning a certificate on February 19,
+                  2025.
+                </li>
+                <li>
+                  <span>Diploma in Social Media Strategy /Alison </span
+                  ><br />Completed a 15-hour course on Social Media Strategy,
+                  earning a diploma on March 3, 2025.
+                </li>
+                <li>
+                  <span>Highschool Diploma (NSC)</span><br />Completed
+                  Highschool on Jan 2024
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------PROJECTS------------------------>
+
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Images/project-001.png" />
+            <div class="layer">
+              <h3>ZaFit Social Media Page</h3>
+              <p>
+                Fitness related Social Media page, made and managed by Steffan
+              </p>
+              <a href="/zafit.html"
+                ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 25px; height: 25px;">
+                  <path
+                    d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"
+                  /></svg>
+                </a>
+            </div>
+          </div>
+
+       
+         <div class="work"> 
+            <img src="Images/project-blank.png" />
+            <div class="layer">
+              <h3>Project 002</h3>
+              <p>
+                More projects coming soon! <br> Stay tuned as I continue to build and showcase my work.
+              </p>
+              <a href="/index.html"
+                ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 25px; height: 25px;">
+                  <path
+                    d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"
+                  /></svg>
+                </a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="Images/project-blank.png" />
+            <div class="layer">
+              <h3>Project 003</h3>
+              <p>
+                More projects coming soon! <br> Stay tuned as I continue to build and showcase my work.
+              </p>
+              <a href="/index.html"
+                ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 25px; height: 25px;">
+                  <path
+                    d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"
+                  /></svg>
+                </a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
         }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
         }
 
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
-
-</body>  
+      }
+    </script>
+  </body>
 </html>
