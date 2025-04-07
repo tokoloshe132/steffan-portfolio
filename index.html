@@ -21,12 +21,12 @@
         <nav>
           <img src="Images/logo.png" class="logo" />
           <ul id="sidemenu">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li> 
+            <li><a href="#about">About</a></li>
+            <li><a href="#about">Skills</a></li>
+            <li><a href="#about">Experience</a></li>
+            <li><a href="#about">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li> 
             <svg class="fas" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" style="width: 25px; height: 25px; fill: white;" onclick="closemenu()"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
           
           </ul>
@@ -221,12 +221,13 @@
             <a href="Documents/CV(Steffan Smuts).pdf" download class="btn btn2">Download CV</a>
           </div>
           <div class="contact-right">
-            <form>
+            <form name="submit-to-google-sheet">
               <input type="text" name="Name" placeholder="Your Name" required>
               <input type="email" name="email" placeholder="Your email" required>
               <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
               <button type="submit" class="btn btn2">Submit</button>
             </form>
+            <span id ="msg" ></span>
             
           </div>
         </div>
@@ -270,5 +271,47 @@
      
 
     </script>
+
+<!-- <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyFSpyxt-ZY6tfwybUN39GyisrdTFjOXq8VcsfUBJUTa_MHNZ1dxVrcCgzqJIsvqXD4/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(Function(){
+          msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      // .then(response => console.log('Succes!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script> -->
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyFSpyxt-ZY6tfwybUN39GyisrdTFjOXq8VcsfUBJUTa_MHNZ1dxVrcCgzqJIsvqXD4/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(() => {
+          msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
   </body>
 </html>
